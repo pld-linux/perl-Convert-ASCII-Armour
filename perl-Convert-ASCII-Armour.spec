@@ -24,7 +24,7 @@ Summary(uk):	Модуль для Perl Convert::ASCII::Armour
 Summary(zh_CN):	Convert::ASCII::Armour Perl дё©И
 Name:		perl-Convert-ASCII-Armour
 Version:	1.4
-Release:	8
+Release:	10
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
