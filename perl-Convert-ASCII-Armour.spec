@@ -3,7 +3,7 @@ Summary:	Convert-ASCII-Armour perl module
 Summary(pl):	Modu³ perla Convert-ASCII-Armour
 Name:		perl-Convert-ASCII-Armour
 Version:	1.4
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -16,6 +16,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Convert::ASCII::Armor - Convert binary octets into ASCII armoured messages.
+
+%description -l pl
+Convert::ASCII::Armor - konwertuje binarne dane na wiadomo¶ci kodowane w
+ASCII.
 
 %prep
 %setup -q -n Convert-ASCII-Armour-%{version}
