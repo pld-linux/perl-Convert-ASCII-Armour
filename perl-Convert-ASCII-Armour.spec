@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Convert
-%define		pnam	ASCII-Armour
+%define	pdir	Convert
+%define	pnam	ASCII-Armour
 Summary:	Convert::ASCII::Armour - convert binary octets into ASCII armoured messages
 Summary(pl):	Convert::ASCII::Armour - konwersja binarnych danych na komunikaty kodowane w ASCII
 Name:		perl-Convert-ASCII-Armour
