@@ -14,7 +14,7 @@ Summary(fr):	Module Perl Convert::ASCII::Armour
 Summary(it):	Modulo di Perl Convert::ASCII::Armour
 Summary(ja):	Convert::ASCII::Armour Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Convert::ASCII::Armour ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Convert::ASCII::Armour
+Summary(nb):	Perlmodul Convert::ASCII::Armour
 Summary(pl):	Modu³ Perla Convert::ASCII::Armour
 Summary(pt):	Módulo de Perl Convert::ASCII::Armour
 Summary(pt_BR):	Módulo Perl Convert::ASCII::Armour
