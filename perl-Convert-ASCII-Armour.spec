@@ -1,8 +1,23 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Convert
-%define	pnam	ASCII-Armour
-Summary:	Convert::ASCII::Armour perl module
-Summary(pl):	Modu³ perla Convert::ASCII::Armour
+%define		pdir	Convert
+%define		pnam	ASCII-Armour
+Summary:	Convert::ASCII::Armour Perl module
+Summary(cs):	Modul Convert::ASCII::Armour pro Perl
+Summary(da):	Perlmodul Convert::ASCII::Armour
+Summary(de):	Convert::ASCII::Armour Perl Modul
+Summary(es):	Módulo de Perl Convert::ASCII::Armour
+Summary(fr):	Module Perl Convert::ASCII::Armour
+Summary(it):	Modulo di Perl Convert::ASCII::Armour
+Summary(ja):	Convert::ASCII::Armour Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Convert::ASCII::Armour ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul Convert::ASCII::Armour
+Summary(pl):	Modu³ Perla Convert::ASCII::Armour
+Summary(pt):	Módulo de Perl Convert::ASCII::Armour
+Summary(pt_BR):	Módulo Perl Convert::ASCII::Armour
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Convert::ASCII::Armour
+Summary(sv):	Convert::ASCII::Armour Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Convert::ASCII::Armour
+Summary(zh_CN):	Convert::ASCII::Armour Perl Ä£¿é
 Name:		perl-Convert-ASCII-Armour
 Version:	1.4
 Release:	7
