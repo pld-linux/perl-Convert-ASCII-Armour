@@ -35,7 +35,7 @@ in no way compatible with PGP.
 Modu³ Perla Convert::ASCII::Armor konwertuje hashe z binarnymi danymi
 na komunikaty kodowane w ASCII, odpowiednie dla transmisji poprzez
 6-bitowe kana³y transportowe. Zakodowane ASCII jest podobne do
-komunikatów szyfrowanych PGP, lecz nie jest w ¿aden sposów zgodne z
+komunikatów szyfrowanych PGP, lecz nie jest w ¿aden sposób zgodne z
 PGP.
 
 %prep
