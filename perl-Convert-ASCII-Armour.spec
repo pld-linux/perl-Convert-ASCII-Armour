@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Convert
@@ -16,7 +16,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7e0e61ff6b014062d6feecaea3f09018
 BuildRequires:	perl-devel >= 5.6
-%if 0%{!?_without_tests:1}
+%if %{with tests}
 BuildRequires:	perl-Compress-Zlib
 BuildRequires:	perl-Digest-MD5
 BuildRequires:	perl-MIME-Base64
@@ -46,7 +46,7 @@ PGP.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
