@@ -5,12 +5,12 @@ Summary:	Convert::ASCII::Armour perl module
 Summary(pl):	Modu³ perla Convert::ASCII::Armour
 Name:		perl-Convert-ASCII-Armour
 Version:	1.4
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,4 +39,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%dir %{perl_sitelib}/Convert/ASCII
 %{perl_sitelib}/Convert/ASCII/*.pm
