@@ -28,6 +28,7 @@ Release:	10
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	7e0e61ff6b014062d6feecaea3f09018
 BuildRequires:	perl-devel >= 5.6
 %if 0%{!?_without_tests:1}
 BuildRequires:	perl-Compress-Zlib
