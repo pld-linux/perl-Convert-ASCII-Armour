@@ -1,3 +1,7 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Convert
 %define		pnam	ASCII-Armour
@@ -25,6 +29,11 @@ License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
+%if 0%{!?_without_tests:1}
+BuildRequires:	perl-Compress-Zlib
+BuildRequires:	perl-Digest-MD5
+BuildRequires:	perl-MIME-Base64
+%endif
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -44,6 +53,8 @@ w ASCII.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor 
 %{__make}
+
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
