@@ -5,27 +5,13 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Convert
 %define		pnam	ASCII-Armour
-Summary:	Convert::ASCII::Armour Perl module
-Summary(cs):	Modul Convert::ASCII::Armour pro Perl
-Summary(da):	Perlmodul Convert::ASCII::Armour
-Summary(de):	Convert::ASCII::Armour Perl Modul
-Summary(es):	Módulo de Perl Convert::ASCII::Armour
-Summary(fr):	Module Perl Convert::ASCII::Armour
-Summary(it):	Modulo di Perl Convert::ASCII::Armour
-Summary(ja):	Convert::ASCII::Armour Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Convert::ASCII::Armour ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul Convert::ASCII::Armour
-Summary(pl):	Modu³ Perla Convert::ASCII::Armour
-Summary(pt):	Módulo de Perl Convert::ASCII::Armour
-Summary(pt_BR):	Módulo Perl Convert::ASCII::Armour
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Convert::ASCII::Armour
-Summary(sv):	Convert::ASCII::Armour Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Convert::ASCII::Armour
-Summary(zh_CN):	Convert::ASCII::Armour Perl Ä£¿é
+Summary:	Convert::ASCII::Armour - convert binary octets into ASCII armoured messages
+Summary(pl):	Convert::ASCII::Armour - konwersja binarnych danych na komunikaty kodowane w ASCII
 Name:		perl-Convert-ASCII-Armour
 Version:	1.4
 Release:	10
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7e0e61ff6b014062d6feecaea3f09018
@@ -40,12 +26,17 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Convert::ASCII::Armor - Convert binary octets into ASCII armoured
-messages.
+Convert::ASCII::Armor Perl module converts hashes of binary octets
+into ASCII messages suitable for transfer over 6-bit clean transport
+channels. The encoded ASCII resembles PGP's armoured messages, but are
+in no way compatible with PGP.
 
 %description -l pl
-Convert::ASCII::Armor - konwertuje binarne dane na wiadomo¶ci kodowane
-w ASCII.
+Modu³ Perla Convert::ASCII::Armor konwertuje hashe z binarnymi danymi
+na komunikaty kodowane w ASCII, odpowiednie dla transmisji poprzez
+6-bitowe kana³y transportowe. Zakodowane ASCII jest podobne do
+komunikatów szyfrowanych PGP, lecz nie jest w ¿aden sposów zgodne z
+PGP.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
