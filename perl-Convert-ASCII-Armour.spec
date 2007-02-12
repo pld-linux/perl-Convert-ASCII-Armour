@@ -6,7 +6,7 @@
 %define		pdir	Convert
 %define		pnam	ASCII-Armour
 Summary:	Convert::ASCII::Armour - convert binary octets into ASCII armoured messages
-Summary(pl):	Convert::ASCII::Armour - konwersja binarnych danych na komunikaty kodowane w ASCII
+Summary(pl.UTF-8):   Convert::ASCII::Armour - konwersja binarnych danych na komunikaty kodowane w ASCII
 Name:		perl-Convert-ASCII-Armour
 Version:	1.4
 Release:	10
@@ -31,11 +31,11 @@ into ASCII messages suitable for transfer over 6-bit clean transport
 channels. The encoded ASCII resembles PGP's armoured messages, but are
 in no way compatible with PGP.
 
-%description -l pl
-Modu≥ Perla Convert::ASCII::Armor konwertuje hashe z binarnymi danymi
+%description -l pl.UTF-8
+Modu≈Ç Perla Convert::ASCII::Armor konwertuje hashe z binarnymi danymi
 na komunikaty kodowane w ASCII, odpowiednie dla transmisji poprzez
-6-bitowe kana≥y transportowe. Zakodowane ASCII jest podobne do
-komunikatÛw szyfrowanych PGP, lecz nie jest w øaden sposÛb zgodne z
+6-bitowe kana≈Çy transportowe. Zakodowane ASCII jest podobne do
+komunikat√≥w szyfrowanych PGP, lecz nie jest w ≈ºaden spos√≥b zgodne z
 PGP.
 
 %prep
