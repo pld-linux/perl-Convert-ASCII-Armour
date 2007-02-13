@@ -6,7 +6,7 @@
 %define		pdir	Convert
 %define		pnam	ASCII-Armour
 Summary:	Convert::ASCII::Armour - convert binary octets into ASCII armoured messages
-Summary(pl.UTF-8):   Convert::ASCII::Armour - konwersja binarnych danych na komunikaty kodowane w ASCII
+Summary(pl.UTF-8):	Convert::ASCII::Armour - konwersja binarnych danych na komunikaty kodowane w ASCII
 Name:		perl-Convert-ASCII-Armour
 Version:	1.4
 Release:	10
