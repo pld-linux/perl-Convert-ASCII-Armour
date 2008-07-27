@@ -9,7 +9,7 @@ Summary:	Convert::ASCII::Armour - convert binary octets into ASCII armoured mess
 Summary(pl.UTF-8):	Convert::ASCII::Armour - konwersja binarnych danych na komunikaty kodowane w ASCII
 Name:		perl-Convert-ASCII-Armour
 Version:	1.4
-Release:	10
+Release:	11
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
