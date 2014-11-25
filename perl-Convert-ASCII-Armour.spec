@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Convert
 %define		pnam	ASCII-Armour
+%include	/usr/lib/rpm/macros.perl
 Summary:	Convert::ASCII::Armour - convert binary octets into ASCII armoured messages
 Summary(pl.UTF-8):	Convert::ASCII::Armour - konwersja binarnych danych na komunikaty kodowane w ASCII
 Name:		perl-Convert-ASCII-Armour
@@ -15,13 +15,14 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7e0e61ff6b014062d6feecaea3f09018
+URL:		http://search.cpan.org/dist/Convert-ASCII-Armour/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Compress-Zlib
 BuildRequires:	perl-Digest-MD5
 BuildRequires:	perl-MIME-Base64
 %endif
-BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
